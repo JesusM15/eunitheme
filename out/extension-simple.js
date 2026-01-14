@@ -229,4 +229,4 @@ class BulbaProvider {
 function deactivate() {
     // Cleanup if needed
 }
-//# sourceMappingURL=extension.js.map
+//# sourceMappingURL=extension-simple.js.map

@@ -1,13 +1,18 @@
 {
   "name": "eunitheme",
   "displayName": "EuniTheme Bulbasaur Edition",
-  "description": "Dark theme…",
+  "description": "Dark theme inspired by Bulbasaur with green accents and visual enhancements. Features nested color coding, pokeball background, and universal compatibility across editors.",
   "version": "1.0.0",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Themes"],
+  "publisher": "eunitheme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
   "main": "./out/extension.js",
   "activationEvents": [
-    "onView:eunitheme.bulbaView",   
+    "onView:eunitheme.bulbaView",
     "onStartupFinished"
   ],
   "contributes": {
@@ -22,12 +27,17 @@
     },
     "themes": [
       {
-        "label": "EuniTheme",
+        "label": "EuniTheme Bulbasaur",
         "uiTheme": "vs-dark",
         "path": "./themes/EuniTheme-color-theme.json"
       }
     ],
     "commands": [
+      {
+        "command": "eunitheme.showBackground",
+        "title": "Show Bulbasaur Background",
+        "category": "EuniTheme"
+      },
       {
         "command": "eunitheme.generateThemes",
         "title": "Generate Universal Themes",
@@ -56,9 +66,10 @@
     "install-background": "node background-installer.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.85.0",
     "@types/node": "^16.11.7",
-    "typescript": "^5.0.0"
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0",
+    "vsce": "^2.15.0"
   },
   "keywords": [
     "theme",
@@ -74,9 +85,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/eunitheme.git"
+    "url": "https://github.com/JesusM15/eunitheme.git"
   },
-  "author": "EuniTheme",
+  "author": {
+    "name": "Jesus M.",
+    "email": "blazikenxdeftem@gmail.com"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/yourusername/eunitheme#readme"
+  "homepage": "https://github.com/JesusM15/eunitheme.git"
 }

@@ -3,11 +3,11 @@
   "dark": true,
   "author": "EuniTheme",
   "editor": {
-    "background": "#1e2720",
-    "foreground": "#e6e9e9",
+    "background": "#1a1f1a",
+    "foreground": "#e8e8e8",
     "caret": "#D31356",
     "selectionBackground": "#3a443c",
-    "selectionForeground": "#e6e9e9",
+    "selectionForeground": "#e8e8e8",
     "lineNumbers": "#686b6d",
     "lineNumbersActive": "#D31356"
   },
@@ -17,31 +17,31 @@
       "fontStyle": "italic"
     },
     "keyword": {
-      "foreground": "#ecdf94e1",
+      "foreground": "#FFD93D",
       "fontStyle": "bold"
     },
     "string": {
-      "foreground": "#A3D377"
+      "foreground": "#98FB98"
     },
     "number": {
-      "foreground": "#F7AA6C"
+      "foreground": "#FF9F40"
     },
     "identifier": {
-      "foreground": "#d87272f1"
+      "foreground": "#FF6B9D"
     },
     "function": {
-      "foreground": "#ECE180"
+      "foreground": "#4ECDC4"
     },
     "class": {
-      "foreground": "#dfa9ffe7"
+      "foreground": "#C77DFF"
     },
     "operator": {
-      "foreground": "#F26C6C"
+      "foreground": "#FF6B6B"
     }
   },
   "ui": {
-    "background": "#1e2720",
-    "foreground": "#e6e9e9",
+    "background": "#1a1f1a",
+    "foreground": "#e8e8e8",
     "accent": "#D31356",
     "secondaryBackground": "#2a342c",
     "border": "#3a443c"

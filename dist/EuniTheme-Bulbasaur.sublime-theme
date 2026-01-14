@@ -1,8 +1,8 @@
 {
   "name": "EuniTheme Bulbasaur",
   "variables": {
-    "background": "#1e2720",
-    "foreground": "#e6e9e9",
+    "background": "#1a1f1a",
+    "foreground": "#e8e8e8",
     "accent": "#D31356"
   },
   "globals": {
@@ -33,7 +33,7 @@
         "variable",
         "variable.other"
       ],
-      "foreground": "#d87272f1"
+      "foreground": "#FF6B9D"
     },
     {
       "name": "Keywords",
@@ -42,7 +42,7 @@
         "storage.type",
         "storage.modifier"
       ],
-      "foreground": "#ecdf94e1",
+      "foreground": "#FFD93D",
       "font_style": "bold"
     },
     {
@@ -51,7 +51,7 @@
         "string",
         "constant.other.symbol"
       ],
-      "foreground": "#A3D377"
+      "foreground": "#98FB98"
     },
     {
       "name": "Functions",
@@ -59,14 +59,14 @@
         "entity.name.function",
         "support.function"
       ],
-      "foreground": "#ECE180"
+      "foreground": "#4ECDC4"
     },
     {
       "name": "Numbers",
       "scope": [
         "constant.numeric"
       ],
-      "foreground": "#F7AA6C"
+      "foreground": "#FF9F40"
     },
     {
       "name": "Operators",
@@ -74,7 +74,7 @@
         "keyword.operator",
         "punctuation"
       ],
-      "foreground": "#F26C6C"
+      "foreground": "#FF6B6B"
     },
     {
       "name": "Classes",
@@ -83,7 +83,7 @@
         "support.class",
         "support.type"
       ],
-      "foreground": "#dfa9ffe7"
+      "foreground": "#C77DFF"
     }
   ]
 }

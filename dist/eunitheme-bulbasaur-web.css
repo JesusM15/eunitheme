@@ -2,18 +2,79 @@
 /* EuniTheme Bulbasaur for Web-based Editors (CodeMirror, Monaco, etc.) */
 
 :root {
-  --bulbasaur-bg: #1e2720;
-  --bulbasaur-fg: #e6e9e9;
+  --bulbasaur-bg: #1a1f1a;
+  --bulbasaur-fg: #e8e8e8;
   --bulbasaur-accent: #D31356;
-  --bulbasaur-sidebar: #153122;
+  --bulbasaur-sidebar: #1a1f1a;
   --bulbasaur-comment: #686b6d;
-  --bulbasaur-variable: #d87272f1;
-  --bulbasaur-keyword: #ecdf94e1;
-  --bulbasaur-string: #A3D377;
-  --bulbasaur-function: #ECE180;
-  --bulbasaur-number: #F7AA6C;
-  --bulbasaur-operator: #F26C6C;
-  --bulbasaur-class: #dfa9ffe7;
+  --bulbasaur-variable: #FF6B9D;
+  --bulbasaur-keyword: #FFD93D;
+  --bulbasaur-string: #98FB98;
+  --bulbasaur-function: #4ECDC4;
+  --bulbasaur-number: #FF9F40;
+  --bulbasaur-operator: #FF6B6B;
+  --bulbasaur-class: #C77DFF;
+}
+
+/* Bulbasaur background decoration */
+.bulbasaur-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23A1EF8B" opacity="0.1"/><circle cx="35" cy="40" r="8" fill="%23D31356" opacity="0.2"/><circle cx="65" cy="40" r="8" fill="%23D31356" opacity="0.2"/><path d="M40 60 Q50 70 60 60" stroke="%23A1EF8B" stroke-width="2" fill="none" opacity="0.3"/></svg>') no-repeat;
+  background-size: contain;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* Bulbasaur corner mascot */
+.bulbasaur-mascot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><ellipse cx="50" cy="60" rx="35" ry="30" fill="%231e2720"/><ellipse cx="50" cy="40" rx="25" ry="20" fill="%23A1EF8B"/><circle cx="40" cy="35" r="5" fill="%23ffffff"/><circle cx="60" cy="35" r="5" fill="%23ffffff"/><circle cx="40" cy="35" r="3" fill="%23000000"/><circle cx="60" cy="35" r="3" fill="%23000000"/><circle cx="35" cy="45" r="4" fill="%23D31356"/><circle cx="65" cy="45" r="4" fill="%23D31356"/><path d="M45 50 Q50 55 55 50" stroke="%23000000" stroke-width="2" fill="none"/><path d="M30 70 Q50 80 70 70" stroke="%23A1EF8B" stroke-width="3" fill="none"/></svg>') no-repeat center;
+  background-size: contain;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1000;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Bulbasaur status indicator */
+.bulbasaur-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: #1a1f1a;
+  border: 1px solid #D31356;
+  border-radius: 20px;
+  color: #e8e8e8;
+  font-size: 12px;
+}
+
+.bulbasaur-status::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%23A1EF8B"/><circle cx="7" cy="8" r="2" fill="%23D31356"/><circle cx="13" cy="8" r="2" fill="%23D31356"/></svg>') no-repeat center;
+  background-size: contain;
 }
 
 /* CodeMirror specific */
@@ -21,6 +82,20 @@
   background-color: var(--bulbasaur-bg);
   color: var(--bulbasaur-fg);
   font-family: 'Fira Code', 'Consolas', monospace;
+  position: relative;
+}
+
+.cm-s-eunitheme::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%23A1EF8B" opacity="0.3"/><circle cx="7" cy="8" r="1.5" fill="%23D31356" opacity="0.5"/><circle cx="13" cy="8" r="1.5" fill="%23D31356" opacity="0.5"/></svg>') no-repeat center;
+  background-size: contain;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .cm-s-eunitheme .cm-comment {
@@ -74,6 +149,21 @@
 .monaco-editor.vs-dark {
   background-color: var(--bulbasaur-bg) !important;
   color: var(--bulbasaur-fg) !important;
+  position: relative;
+}
+
+.monaco-editor.vs-dark::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><ellipse cx="20" cy="25" rx="15" ry="12" fill="%23A1EF8B" opacity="0.2"/><circle cx="15" cy="20" r="3" fill="%23D31356" opacity="0.4"/><circle cx="25" cy="20" r="3" fill="%23D31356" opacity="0.4"/><path d="M15 30 Q20 35 25 30" stroke="%23A1EF8B" stroke-width="2" fill="none" opacity="0.5"/></svg>') no-repeat center;
+  background-size: contain;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .monaco-editor.vs-dark .token.comment {
@@ -108,4 +198,20 @@
 
 .monaco-editor.vs-dark .token.operator {
   color: var(--bulbasaur-operator) !important;
+}
+
+/* Bulbasaur loading animation */
+.bulbasaur-loading {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><ellipse cx="20" cy="25" rx="15" ry="12" fill="%231e2720"/><ellipse cx="20" cy="15" rx="10" ry="8" fill="%23A1EF8B"/><circle cx="15" cy="12" r="2" fill="%23ffffff"/><circle cx="25" cy="12" r="2" fill="%23ffffff"/><circle cx="15" cy="12" r="1" fill="%23000000"/><circle cx="25" cy="12" r="1" fill="%23000000"/><circle cx="12" cy="18" r="1.5" fill="%23D31356"/><circle cx="28" cy="18" r="1.5" fill="%23D31356"/><path d="M17 22 Q20 25 23 22" stroke="%23000000" stroke-width="1" fill="none"/></svg>') no-repeat center;
+  background-size: contain;
+  animation: walk 2s linear infinite;
+}
+
+@keyframes walk {
+  0% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  100% { transform: translateX(-5px) rotate(-5deg); }
 }

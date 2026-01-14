@@ -8,7 +8,7 @@ endif
 let g:colors_name = 'eunitheme-bulbasaur'
 
 " Background colors
-hi Normal guibg=#1e2720 guifg=#e6e9e9
+hi Normal guibg=#1a1f1a guifg=#e8e8e8
 hi CursorLine guibg=#2a342c
 hi CursorColumn guibg=#2a342c
 hi ColorColumn guibg=#2a342c
@@ -19,33 +19,33 @@ hi VisualNOS guibg=#2a342c
 
 " Syntax highlighting
 hi Comment guifg=#686b6d gui=italic
-hi Constant guifg=#F7AA6C
-hi String guifg=#A3D377
-hi Character guifg=#A3D377
-hi Number guifg=#F7AA6C
+hi Constant guifg=#FF9F40
+hi String guifg=#98FB98
+hi Character guifg=#98FB98
+hi Number guifg=#FF9F40
 hi Boolean guifg=#fd8484ea
-hi Float guifg=#F7AA6C
+hi Float guifg=#FF9F40
 
-hi Identifier guifg=#d87272f1
-hi Function guifg=#ECE180
+hi Identifier guifg=#FF6B9D
+hi Function guifg=#4ECDC4
 
-hi Statement guifg=#ecdf94e1 gui=bold
-hi Conditional guifg=#ecdf94e1 gui=bold
-hi Repeat guifg=#ecdf94e1 gui=bold
-hi Label guifg=#ecdf94e1
-hi Operator guifg=#F26C6C
-hi Keyword guifg=#ecdf94e1 gui=bold
+hi Statement guifg=#FFD93D gui=bold
+hi Conditional guifg=#FFD93D gui=bold
+hi Repeat guifg=#FFD93D gui=bold
+hi Label guifg=#FFD93D
+hi Operator guifg=#FF6B6B
+hi Keyword guifg=#FFD93D gui=bold
 hi Exception guifg=#D31356
 
-hi PreProc guifg=#A1EF8B
-hi Include guifg=#A1EF8B
-hi Define guifg=#A1EF8B
-hi Macro guifg=#A1EF8B
+hi PreProc guifg=#8FBC8F
+hi Include guifg=#8FBC8F
+hi Define guifg=#8FBC8F
+hi Macro guifg=#8FBC8F
 
-hi Type guifg=#dfa9ffe7
-hi StorageClass guifg=#ecdf94e1
-hi Structure guifg=#dfa9ffe7
-hi Typedef guifg=#dfa9ffe7
+hi Type guifg=#C77DFF
+hi StorageClass guifg=#FFD93D
+hi Structure guifg=#C77DFF
+hi Typedef guifg=#C77DFF
 
 hi Special guifg=#D31356
 hi SpecialChar guifg=#D31356
@@ -55,14 +55,14 @@ hi Delimiter guifg=#555555
 " UI elements
 hi Cursor guibg=#D31356
 hi lCursor guibg=#D31356
-hi MatchParen guibg=#D31356 guifg=#1e2720
-hi Search guibg=#D31356 guifg=#1e2720
-hi IncSearch guibg=#ecdf94e1 guifg=#1e2720
+hi MatchParen guibg=#D31356 guifg=#1a1f1a
+hi Search guibg=#D31356 guifg=#1a1f1a
+hi IncSearch guibg=#FFD93D guifg=#1a1f1a
 
 " Status line
-hi StatusLine guibg=#D31356 guifg=#e6e9e9
-hi StatusLineNC guibg=#2a342c guifg=#e6e9e9
+hi StatusLine guibg=#D31356 guifg=#e8e8e8
+hi StatusLineNC guibg=#2a342c guifg=#e8e8e8
 
 " Line numbers
-hi LineNr guifg=#686b6d guibg=#1e2720
+hi LineNr guifg=#686b6d guibg=#1a1f1a
 hi CursorLineNr guifg=#D31356 guibg=#2a342c

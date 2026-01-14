@@ -1,22 +1,18 @@
-import * as vscode from 'vscode';
-import * as path from 'path';
-
-export function activate(ctx: vscode.ExtensionContext) {
-  console.log('[EuniTheme] Creating webview background...');
-
-  // Create webview panel for background
-  const panel = vscode.window.createWebviewPanel(
-    'bulbasaurBackground',
-    'Bulbasaur Background',
-    vscode.ViewColumn.One,
-    {
-      enableScripts: true,
-      retainContextWhenHidden: true
-    }
-  );
-
-  // Set webview content
-  panel.webview.html = `<!DOCTYPE html>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.activate = activate;
+exports.deactivate = deactivate;
+const vscode = require("vscode");
+const path = require("path");
+function activate(ctx) {
+    console.log('[EuniTheme] Creating webview background...');
+    // Create webview panel for background
+    const panel = vscode.window.createWebviewPanel('bulbasaurBackground', 'Bulbasaur Background', vscode.ViewColumn.One, {
+        enableScripts: true,
+        retainContextWhenHidden: true
+    });
+    // Set webview content
+    panel.webview.html = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,9 +43,7 @@ export function activate(ctx: vscode.ExtensionContext) {
         .pokeball {
             width: 100%;
             height: 100%;
-            background-image: url('${panel.webview.asWebviewUri(
-              vscode.Uri.file(path.join(ctx.extensionPath, 'media', 'pokeball.png'))
-            )}');
+            background-image: url('${panel.webview.asWebviewUri(vscode.Uri.file(path.join(ctx.extensionPath, 'media', 'pokeball.png')))}');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -97,27 +91,23 @@ export function activate(ctx: vscode.ExtensionContext) {
     </div>
 </body>
 </html>`;
-
-  // Handle webview messages
-  panel.webview.onDidReceiveMessage(
-    message => {
-      switch (message.command) {
-        case 'updateOpacity':
-          if (message.opacity !== undefined) {
-            panel.webview.postMessage({
-              command: 'setOpacity',
-              opacity: message.opacity
-            });
-          }
-          break;
-      }
-    }
-  );
-
-  // Show panel
-  panel.reveal();
+    // Handle webview messages
+    panel.webview.onDidReceiveMessage(message => {
+        switch (message.command) {
+            case 'updateOpacity':
+                if (message.opacity !== undefined) {
+                    panel.webview.postMessage({
+                        command: 'setOpacity',
+                        opacity: message.opacity
+                    });
+                }
+                break;
+        }
+    });
+    // Show panel
+    panel.reveal();
 }
-
-export function deactivate() {
-  console.log('[EuniTheme] Background webview deactivated');
+function deactivate() {
+    console.log('[EuniTheme] Background webview deactivated');
 }
+//# sourceMappingURL=webview-background.js.map
