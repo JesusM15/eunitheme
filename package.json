@@ -1,0 +1,82 @@
+{
+  "name": "eunitheme",
+  "displayName": "EuniTheme Bulbasaur Edition",
+  "description": "Dark theme…",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Themes"],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onView:eunitheme.bulbaView",   
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "eunitheme.bulbaView",
+          "name": "Bulbasaur",
+          "icon": "media/bulbasaur.gif"
+        }
+      ]
+    },
+    "themes": [
+      {
+        "label": "EuniTheme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/EuniTheme-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "eunitheme.generateThemes",
+        "title": "Generate Universal Themes",
+        "category": "EuniTheme"
+      },
+      {
+        "command": "eunitheme.generateVisuals",
+        "title": "Generate Visual Enhancements",
+        "category": "EuniTheme"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile",
+    "generate-themes": "node theme-adapter.js all",
+    "generate-sublime": "node theme-adapter.js sublime",
+    "generate-atom": "node theme-adapter.js atom",
+    "generate-vim": "node theme-adapter.js vim",
+    "generate-jetbrains": "node theme-adapter.js jetbrains",
+    "generate-web": "node theme-adapter.js web",
+    "generate-visuals": "node visual-enhancer.js",
+    "generate-background": "node background-enhancer.js",
+    "generate-nested": "node nested-colors.js",
+    "install-background": "node background-installer.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^16.11.7",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "theme",
+    "dark",
+    "bulbasaur",
+    "pokemon",
+    "green",
+    "universal",
+    "sublime",
+    "atom",
+    "vim",
+    "jetbrains"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/eunitheme.git"
+  },
+  "author": "EuniTheme",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/eunitheme#readme"
+}

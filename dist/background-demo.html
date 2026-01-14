@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuniTheme Bulbasaur - Background Demo</title>
+    <link rel="stylesheet" href="./editor-background.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            color: #e8e8e8;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .demo-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(26, 31, 26, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(161, 239, 139, 0.3);
+        }
+        
+        .code-sample {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #D31356;
+        }
+        
+        h1 {
+            color: #8FBC8F;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .keyword { color: #FFD93D; font-weight: bold; }
+        .string { color: #98FB98; }
+        .function { color: #4ECDC4; }
+        .variable { color: #FF6B9D; }
+        .comment { color: #686b6d; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="editor-background-pokeball"></div>
+    <div class="pokeball-pattern"></div>
+    <div class="pokeball-watermark"></div>
+    
+    <div class="demo-content">
+        <h1>🌱 EuniTheme Bulbasaur Background Demo</h1>
+        
+        <div class="code-sample">
+<span class="keyword">function</span> <span class="function">bulbasaurTheme</span>(<span class="variable">options</span>) {
+    <span class="comment">// Traditional green colors that are easy on the eyes</span>
+    <span class="keyword">const</span> <span class="variable">colors</span> = {
+        <span class="string">background</span>: <span class="string">'#1a1f1a'</span>,
+        <span class="string">foreground</span>: <span class="string">'#e8e8e8'</span>,
+        <span class="string">accent</span>: <span class="string">'#D31356'</span>
+    };
+    
+    <span class="keyword">return</span> <span class="variable">colors</span>;
+}
+        </div>
+        
+        <div class="code-sample">
+<span class="comment">// Pokeball background decoration</span>
+<span class="keyword">class</span> <span class="function">PokeballBackground</span> {
+    <span class="function">constructor</span>() {
+        <span class="keyword">this</span>.<span class="variable">opacity</span> = <span class="string">0.1</span>;
+        <span class="keyword">this</span>.<span class="variable">animation</span> = <span class="string">'float'</span>;
+    }
+    
+    <span class="function">render</span>() {
+        <span class="keyword">return</span> <span class="string">'<div class="pokeball-pattern"></div>'</span>;
+    }
+}
+        </div>
+        
+        <p style="text-align: center; margin-top: 30px; color: #8FBC8F;">
+            🎮 Background with subtle pokeball patterns and traditional green colors
+        </p>
+    </div>
+</body>
+</html>

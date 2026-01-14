@@ -1,0 +1,89 @@
+{
+  "name": "EuniTheme Bulbasaur",
+  "variables": {
+    "background": "#1e2720",
+    "foreground": "#e6e9e9",
+    "accent": "#D31356"
+  },
+  "globals": {
+    "foreground": "var(foreground)",
+    "background": "var(background)",
+    "caret": "var(accent)",
+    "block_caret": "var(accent)",
+    "line_highlight": "#2a342c",
+    "selection": "#3a443c",
+    "selection_border": "#4a545c",
+    "inactive_selection": "#2a342c",
+    "misspelling": "#D31356",
+    "accent": "var(accent)"
+  },
+  "rules": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "foreground": "#686b6d",
+      "font_style": "italic"
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "variable.other"
+      ],
+      "foreground": "#d87272f1"
+    },
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "foreground": "#ecdf94e1",
+      "font_style": "bold"
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "constant.other.symbol"
+      ],
+      "foreground": "#A3D377"
+    },
+    {
+      "name": "Functions",
+      "scope": [
+        "entity.name.function",
+        "support.function"
+      ],
+      "foreground": "#ECE180"
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant.numeric"
+      ],
+      "foreground": "#F7AA6C"
+    },
+    {
+      "name": "Operators",
+      "scope": [
+        "keyword.operator",
+        "punctuation"
+      ],
+      "foreground": "#F26C6C"
+    },
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.class",
+        "support.class",
+        "support.type"
+      ],
+      "foreground": "#dfa9ffe7"
+    }
+  ]
+}

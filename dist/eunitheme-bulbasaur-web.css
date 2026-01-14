@@ -1,0 +1,111 @@
+
+/* EuniTheme Bulbasaur for Web-based Editors (CodeMirror, Monaco, etc.) */
+
+:root {
+  --bulbasaur-bg: #1e2720;
+  --bulbasaur-fg: #e6e9e9;
+  --bulbasaur-accent: #D31356;
+  --bulbasaur-sidebar: #153122;
+  --bulbasaur-comment: #686b6d;
+  --bulbasaur-variable: #d87272f1;
+  --bulbasaur-keyword: #ecdf94e1;
+  --bulbasaur-string: #A3D377;
+  --bulbasaur-function: #ECE180;
+  --bulbasaur-number: #F7AA6C;
+  --bulbasaur-operator: #F26C6C;
+  --bulbasaur-class: #dfa9ffe7;
+}
+
+/* CodeMirror specific */
+.cm-s-eunitheme {
+  background-color: var(--bulbasaur-bg);
+  color: var(--bulbasaur-fg);
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+.cm-s-eunitheme .cm-comment {
+  color: var(--bulbasaur-comment);
+  font-style: italic;
+}
+
+.cm-s-eunitheme .cm-keyword {
+  color: var(--bulbasaur-keyword);
+  font-weight: bold;
+}
+
+.cm-s-eunitheme .cm-string {
+  color: var(--bulbasaur-string);
+}
+
+.cm-s-eunitheme .cm-number {
+  color: var(--bulbasaur-number);
+}
+
+.cm-s-eunitheme .cm-variable {
+  color: var(--bulbasaur-variable);
+}
+
+.cm-s-eunitheme .cm-def {
+  color: var(--bulbasaur-function);
+}
+
+.cm-s-eunitheme .cm-operator {
+  color: var(--bulbasaur-operator);
+}
+
+.cm-s-eunitheme .cm-tag {
+  color: var(--bulbasaur-accent);
+}
+
+.cm-s-eunitheme .cm-attribute {
+  color: var(--bulbasaur-class);
+}
+
+/* Selection and cursor */
+.cm-s-eunitheme .cm-cursor {
+  border-left: 2px solid var(--bulbasaur-accent);
+}
+
+.cm-s-eunitheme .cm-selection {
+  background-color: rgba(211, 19, 86, 0.3);
+}
+
+/* Monaco Editor specific */
+.monaco-editor.vs-dark {
+  background-color: var(--bulbasaur-bg) !important;
+  color: var(--bulbasaur-fg) !important;
+}
+
+.monaco-editor.vs-dark .token.comment {
+  color: var(--bulbasaur-comment) !important;
+  font-style: italic !important;
+}
+
+.monaco-editor.vs-dark .token.keyword {
+  color: var(--bulbasaur-keyword) !important;
+  font-weight: bold !important;
+}
+
+.monaco-editor.vs-dark .token.string {
+  color: var(--bulbasaur-string) !important;
+}
+
+.monaco-editor.vs-dark .token.number {
+  color: var(--bulbasaur-number) !important;
+}
+
+.monaco-editor.vs-dark .token.identifier {
+  color: var(--bulbasaur-variable) !important;
+}
+
+.monaco-editor.vs-dark .token.function {
+  color: var(--bulbasaur-function) !important;
+}
+
+.monaco-editor.vs-dark .token.class {
+  color: var(--bulbasaur-class) !important;
+}
+
+.monaco-editor.vs-dark .token.operator {
+  color: var(--bulbasaur-operator) !important;
+}

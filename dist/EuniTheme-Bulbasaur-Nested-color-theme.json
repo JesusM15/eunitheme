@@ -1,0 +1,212 @@
+{
+  "name": "EuniTheme Bulbasaur Nested",
+  "colors": {
+    "editor.background": "#1e2720",
+    "editor.foreground": "#e6e9e9",
+    "activityBarBadge.background": "#a51044",
+    "sideBarTitle.foreground": "#bbbbbb",
+    "statusBar.background": "#D31356",
+    "statusBar.foreground": "#e6e9e9",
+    "sideBar.background": "#153122"
+  },
+  "tokenColors": [
+    {
+      "name": "Variable Level 1",
+      "scope": [
+        "variable",
+        "variable.other"
+      ],
+      "settings": {
+        "foreground": "#A1E3A1"
+      }
+    },
+    {
+      "name": "Function Level 1",
+      "scope": [
+        "entity.name.function",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#ECE180"
+      }
+    },
+    {
+      "name": "Property Level 1",
+      "scope": [
+        "support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#A3D377"
+      }
+    },
+    {
+      "name": "Class Level 1",
+      "scope": [
+        "entity.name.class",
+        "support.class"
+      ],
+      "settings": {
+        "foreground": "#dfa9ffe7"
+      }
+    },
+    {
+      "name": "String Level 1",
+      "scope": [
+        "string"
+      ],
+      "settings": {
+        "foreground": "#A3D377"
+      }
+    },
+    {
+      "name": "Variable Level 2",
+      "scope": [
+        "meta.property-access variable",
+        "object.property-1 variable"
+      ],
+      "settings": {
+        "foreground": "#8FBC8F"
+      }
+    },
+    {
+      "name": "Function Level 2",
+      "scope": [
+        "meta.function-call entity.name.function",
+        "function-call-1 .entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#FFD93D"
+      }
+    },
+    {
+      "name": "Property Level 2",
+      "scope": [
+        "meta.property-access support.type.property-name",
+        "object-property-2 support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#61ffcaee"
+      }
+    },
+    {
+      "name": "Class Level 2",
+      "scope": [
+        "meta.class entity.name.class",
+        "entity.name.class-1"
+      ],
+      "settings": {
+        "foreground": "#C77DFF"
+      }
+    },
+    {
+      "name": "String Level 2",
+      "scope": [
+        "meta.string string",
+        "string-1"
+      ],
+      "settings": {
+        "foreground": "#98FB98"
+      }
+    },
+    {
+      "name": "Variable Level 3",
+      "scope": [
+        "meta.property-access meta.property-access variable",
+        "object-property-2 variable"
+      ],
+      "settings": {
+        "foreground": "#6B8E23"
+      }
+    },
+    {
+      "name": "Function Level 3",
+      "scope": [
+        "meta.function-call meta.function-call entity.name.function",
+        "function-call-2 .entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#FFA500"
+      }
+    },
+    {
+      "name": "Property Level 3",
+      "scope": [
+        "meta.property-access meta.property-access support.type.property-name",
+        "object-property-3 support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#4ECDC4"
+      }
+    },
+    {
+      "name": "Class Level 3",
+      "scope": [
+        "meta.class meta.class entity.name.class",
+        "entity.name.class-2"
+      ],
+      "settings": {
+        "foreground": "#9370DB"
+      }
+    },
+    {
+      "name": "String Level 3",
+      "scope": [
+        "meta.string meta.string string",
+        "string-2"
+      ],
+      "settings": {
+        "foreground": "#90EE90"
+      }
+    },
+    {
+      "name": "Variable Level 4+",
+      "scope": [
+        "meta.property-access meta.property-access meta.property-access variable",
+        "object-property-3 variable"
+      ],
+      "settings": {
+        "foreground": "#A1E3A1"
+      }
+    },
+    {
+      "name": "Function Level 4+",
+      "scope": [
+        "meta.function-call meta.function-call meta.function-call entity.name.function",
+        "function-call-3 .entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#ECE180"
+      }
+    },
+    {
+      "name": "Property Level 4+",
+      "scope": [
+        "meta.property-access meta.property-access meta.property-access support.type.property-name",
+        "object-property-4 support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#A3D377"
+      }
+    },
+    {
+      "name": "Class Level 4+",
+      "scope": [
+        "meta.class meta.class meta.class entity.name.class",
+        "entity.name.class-3"
+      ],
+      "settings": {
+        "foreground": "#dfa9ffe7"
+      }
+    },
+    {
+      "name": "String Level 4+",
+      "scope": [
+        "meta.string meta.string meta.string string",
+        "string-3"
+      ],
+      "settings": {
+        "foreground": "#A3D377"
+      }
+    }
+  ]
+}

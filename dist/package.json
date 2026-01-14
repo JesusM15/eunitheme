@@ -1,0 +1,17 @@
+{
+  "name": "EuniTheme Bulbasaur",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Bulbasaur-inspired dark theme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "bulbasaur",
+    "dark"
+  ],
+  "repository": "https://github.com/yourusername/eunitheme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

@@ -1,0 +1,123 @@
+/* EuniTheme Bulbasaur - Nested Colors System */
+
+/* Nivel 1 - Propiedades principales */
+.variable-level-1 { color: #A1E3A1 !important; }
+.function-level-1 { color: #ECE180 !important; }
+.property-level-1 { color: #A3D377 !important; }
+.keyword-level-1 { color: #ecdf94e1 !important; }
+.class-level-1 { color: #dfa9ffe7 !important; }
+.string-level-1 { color: #A3D377 !important; }
+.number-level-1 { color: #F7AA6C !important; }
+.operator-level-1 { color: #F26C6C !important; }
+
+/* Nivel 2 - Segundo nivel de anidación */
+.variable-level-2 { color: #8FBC8F !important; }
+.function-level-2 { color: #FFD93D !important; }
+.property-level-2 { color: #61ffcaee !important; }
+.keyword-level-2 { color: #9BEBC4 !important; }
+.class-level-2 { color: #C77DFF !important; }
+.string-level-2 { color: #98FB98 !important; }
+.number-level-2 { color: #FF9F40 !important; }
+.operator-level-2 { color: #FF6B6B !important; }
+
+/* Nivel 3 - Tercer nivel de anidación */
+.variable-level-3 { color: #6B8E23 !important; }
+.function-level-3 { color: #FFA500 !important; }
+.property-level-3 { color: #4ECDC4 !important; }
+.keyword-level-3 { color: #00CED1 !important; }
+.class-level-3 { color: #9370DB !important; }
+.string-level-3 { color: #90EE90 !important; }
+.number-level-3 { color: #FF8C00 !important; }
+.operator-level-3 { color: #DC143C !important; }
+
+/* Nivel 4+ - Reinicia ciclo (vuelve al nivel 1) */
+.variable-level-4 { color: #A1E3A1 !important; }
+.function-level-4 { color: #ECE180 !important; }
+.property-level-4 { color: #A3D377 !important; }
+.keyword-level-4 { color: #ecdf94e1 !important; }
+.class-level-4 { color: #dfa9ffe7 !important; }
+.string-level-4 { color: #A3D377 !important; }
+.number-level-4 { color: #F7AA6C !important; }
+.operator-level-4 { color: #F26C6C !important; }
+
+/* Aplicación automática por profundidad */
+/* objeto.propiedad (nivel 1) */
+.object-property-1,
+.meta.property-access .variable {
+  color: #A1E3A1 !important;
+}
+
+/* objeto.propiedad.propiedad (nivel 2) */
+.object-property-2,
+.meta.property-access .meta.property-access .variable {
+  color: #8FBC8F !important;
+}
+
+/* objeto.propiedad.propiedad.propiedad (nivel 3) */
+.object-property-3,
+.meta.property-access .meta.property-access .meta.property-access .variable {
+  color: #6B8E23 !important;
+}
+
+/* objeto.propiedad.propiedad.propiedad.propiedad (nivel 4+) */
+.object-property-4,
+.meta.property-access .meta.property-access .meta.property-access .meta.property-access .variable {
+  color: #A1E3A1 !important;
+}
+
+/* Funciones anidadas */
+.function-call-1 .entity.name.function { color: #ECE180 !important; }
+.function-call-2 .entity.name.function { color: #FFD93D !important; }
+.function-call-3 .entity.name.function { color: #FFA500 !important; }
+.function-call-4 .entity.name.function { color: #ECE180 !important; }
+
+/* Clases anidadas */
+.entity.name.class-1 { color: #dfa9ffe7 !important; }
+.entity.name.class-2 { color: #C77DFF !important; }
+.entity.name.class-3 { color: #9370DB !important; }
+.entity.name.class-4 { color: #dfa9ffe7 !important; }
+
+/* Cadenas anidadas */
+.string-1 { color: #A3D377 !important; }
+.string-2 { color: #98FB98 !important; }
+.string-3 { color: #90EE90 !important; }
+.string-4 { color: #A3D377 !important; }
+
+/* Transiciones suaves entre niveles */
+.variable-level-1,
+.variable-level-2,
+.variable-level-3,
+.variable-level-4 {
+  transition: color 0.3s ease;
+}
+
+.function-level-1,
+.function-level-2,
+.function-level-3,
+.function-level-4 {
+  transition: color 0.3s ease;
+}
+
+.property-level-1,
+.property-level-2,
+.property-level-3,
+.property-level-4 {
+  transition: color 0.3s ease;
+}
+
+/* Indicador visual de nivel */
+.nested-indicator::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.variable-level-1 .nested-indicator::before { background: #A1E3A1; }
+.variable-level-2 .nested-indicator::before { background: #8FBC8F; }
+.variable-level-3 .nested-indicator::before { background: #6B8E23; }
+.variable-level-4 .nested-indicator::before { background: #A1E3A1; }

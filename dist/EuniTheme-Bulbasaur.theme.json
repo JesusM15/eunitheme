@@ -1,0 +1,49 @@
+{
+  "name": "EuniTheme Bulbasaur",
+  "dark": true,
+  "author": "EuniTheme",
+  "editor": {
+    "background": "#1e2720",
+    "foreground": "#e6e9e9",
+    "caret": "#D31356",
+    "selectionBackground": "#3a443c",
+    "selectionForeground": "#e6e9e9",
+    "lineNumbers": "#686b6d",
+    "lineNumbersActive": "#D31356"
+  },
+  "syntax": {
+    "comment": {
+      "foreground": "#686b6d",
+      "fontStyle": "italic"
+    },
+    "keyword": {
+      "foreground": "#ecdf94e1",
+      "fontStyle": "bold"
+    },
+    "string": {
+      "foreground": "#A3D377"
+    },
+    "number": {
+      "foreground": "#F7AA6C"
+    },
+    "identifier": {
+      "foreground": "#d87272f1"
+    },
+    "function": {
+      "foreground": "#ECE180"
+    },
+    "class": {
+      "foreground": "#dfa9ffe7"
+    },
+    "operator": {
+      "foreground": "#F26C6C"
+    }
+  },
+  "ui": {
+    "background": "#1e2720",
+    "foreground": "#e6e9e9",
+    "accent": "#D31356",
+    "secondaryBackground": "#2a342c",
+    "border": "#3a443c"
+  }
+}
